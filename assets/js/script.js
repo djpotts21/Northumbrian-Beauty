@@ -1,5 +1,3 @@
-import { MarkerClusterer } from "https://cdn.skypack.dev/@googlemaps/markerclusterer@2.0.3";
-
 var locations = []
 var lovelyPlacesNorthumberland = [
   { lat: -31.56391, lng: 147.154312 },
@@ -27,17 +25,20 @@ var lovelyPlacesNorthumberland = [
   { lat: -43.999792, lng: 170.463352 },
 ]
 
-document.getElementById("nice-places").addEventListener("click", function(){ 
-  locations = lovelyPlacesNorthumberland; 
-  initMap();
-  console.log(locations) 
-});
-
-document.getElementById("clear").addEventListener("click", function(){ 
+function clearLocations() {
   locations = []; 
   initMap();
   console.log(locations) 
-});
+}
+
+function lovelyPlacesNorthumberlandFunc() {
+  locations = lovelyPlacesNorthumberland; 
+  initMap();
+  console.log(locations) 
+}
+
+document.getElementById("nice-places").addEventListener("click", lovelyPlacesNorthumberlandFunc);
+document.getElementById("clear").addEventListener("click", clearLocations);
 
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
@@ -71,8 +72,6 @@ function initMap() {
   new MarkerClusterer({ markers, map });
 }
 
-
-
-
-
 window.initMap = initMap;
+
+module.exports = {initMap, clearLocations, lovelyPlacesNorthumberlandFunc}
