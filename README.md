@@ -1,39 +1,37 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome,
+# The Beauty of Northumberland
 
-This is the Code Institute student template for Codeanywhere. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Our web application aims to provide an immersive experience for tourists and visitors to Northumberland by combining various features. Utilizing Google Map markers, the application showcases the breathtaking beauty spots scattered throughout the Northumberland region. Users can explore these spots by accessing detailed information, reviews, and ratings. Additionally, the integration with Booking.com allows users to conveniently find and book hotels and accommodations in the surrounding area. The web application also offers a 16-day weather forecast, providing up-to-date information on temperature, precipitation, and wind conditions. To enhance the experience further, the inclusion of webcams enables users to enjoy live views of the area, allowing them to witness the beauty of Northumberland in real-time. With this comprehensive approach, our web application aims to assist users in planning their trip, discovering hidden gems, and making the most of their visit to Northumberland.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **May 11th, 2023**
+## Scope of work
 
-## Codeanywhere Reminders
+### Project Goals
+    1. A responsive website available on all devices.
+    2. The website should be easy to read for all users.
+    3. The website should be one page that uses Javascript to update the page with information relevent to the buttons clicked.
+    4. The website should compliment the colors of the Northumberland Flag (Pantone and HEX colours are detailed below).
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+### Deliverables
 
-`python3 -m http.server`
+#### Default View (Home)
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Authors
 
-`http_server`
+- [@djpotts21](https://www.github.com/djpotts21)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+## Acknowledgements
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+ - Image / Document (filename.abc) a picture of 123 is from XYZ by author ABC. [Link to file on XYZ](http://#)
+ - Northumberland Flag Colour Pantone is from the Flag Institue [Link to page](https://www.flaginstitute.org/wp/flags/northumberland-flag/)
+ - Pantone colours converted to HEX by [Color Beautify](https://codebeautify.org/pantone-to-hex-converter?utm_content=cmp-true)
 
-To log into the Heroku toolbelt CLI:
+## Color Reference
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Northumberland Flag (Red) | #DA291C | Pantone®: Red 485
+| Northumberland Flag (Yellow)  | #FFD100 | Pantone®: Yellow 109
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
----
-
-Happy coding!
