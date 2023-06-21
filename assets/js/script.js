@@ -1,3 +1,5 @@
+import { MarkerClusterer } from "https://cdn.skypack.dev/@googlemaps/markerclusterer@2.0.3";
+
 var locations = []
 var lovelyPlacesNorthumberland = [
   { lat: -31.56391, lng: 147.154312 },
