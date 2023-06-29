@@ -22,10 +22,7 @@ footer{
     width: 100vw;
     height:85vh;
 }
-.gm-style-iw-d {
-    max-height: 450px !important;
-    height: 35vh;
-  }
+
   #info-window-left{
     width:66%; 
     display: inline-block;
@@ -61,6 +58,10 @@ footer{
       #info-window-left {
         width: 100%;
         display: inline-block;
+      }
+      .gm-style-iw-d {
+        max-height: 450px !important;
+        height: 35vh;
       }
       
   }
