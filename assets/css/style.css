@@ -3,7 +3,15 @@
     max-height: 7.5vh;
 }
 .nav-logo{
-    height: 7.5vh;
+    height: 4.5vh;
+}
+.nav-item .nav-link{
+    transition:  0.5s ease-in-out;
+    border-bottom: #ffffff 2px solid;
+}
+.nav-item:hover .nav-link:hover{
+    color:#DA291C;
+    border-bottom: #DA291C 2px solid;
 }
 footer{
     height: 7.5vh;
@@ -15,12 +23,8 @@ footer{
     height:85vh;
 }
 .gm-style-iw-d {
-    max-height: 130px !important;
-}
-.gm-style-iw {
-    max-width: 648px;
-    max-height: 190px !important;
-    min-width: 0px;
+    max-height: 450px !important;
+    height: 35vh;
   }
   #info-window-left{
     width:66%; 
@@ -39,18 +43,30 @@ footer{
     height: 116px;
     vertical-align: unset;
   }
+
   
 
 
   /*Tablet CSS*/
-  @media only screen and (max-width: 811px) {
+  @media only screen and (max-width: 809px) {
     .navbar-brand {
         font-size: 1.5em;
       }
+      .nav-logo {
+        height: 8.5vh;
+      }
+      .gm-style-iw.gm-style-iw-c {
+        max-width: 95vw !important;
+      }
+      #info-window-left {
+        width: 100%;
+        display: inline-block;
+      }
+      
   }
 
     /*Mobile CSS*/
-    @media only screen and (max-width: 361px) {
+    @media only screen and (max-width: 376px) {
         .nav-logo {
           height: 4.5vh;
         }
