@@ -32,9 +32,10 @@ Our web application aims to provide an immersive experience for tourists and vis
 All location blurbs / descriptions are snippets of text taken from each website linked to the location.
 
 #### Images 
- - Photo of Newbiggin Maritime Centre (Location A) is provided by Newbiggin Heritgage Partnership at the following URL [https://d2f0ora2gkri0g.cloudfront.net/bkpam2155390_img_0200.jpg]( https://d2f0ora2gkri0g.cloudfront.net/bkpam2155390_img_0200.jpg)
- - Photo of Woodhorn Museum (Location B) is provided by Art UK at the following URL [https://d3d00swyhr67nd.cloudfront.net/w800h800/DSC_2701-1024x683.jpg](https://d3d00swyhr67nd.cloudfront.net/w800h800/DSC_2701-1024x683.jpg)
- - Photo of Warkworth Castle (Location C) is provided by Visit Northumberland at the following URL [https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg]( https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg)
+ - Northumberland Flag (Navbar Logo) is provided by British County Flags at the following URL[https://britishcountyflags.com/2013/07/11/northumberland-flag/](https://britishcountyflags.com/2013/07/11/northumberland-flag/)
+ - Photo of Newbiggin Maritime Centre (Location 1) is provided by Newbiggin Heritgage Partnership at the following URL [https://d2f0ora2gkri0g.cloudfront.net/bkpam2155390_img_0200.jpg]( https://d2f0ora2gkri0g.cloudfront.net/bkpam2155390_img_0200.jpg)
+ - Photo of Woodhorn Museum (Location 2) is provided by Art UK at the following URL [https://d3d00swyhr67nd.cloudfront.net/w800h800/DSC_2701-1024x683.jpg](https://d3d00swyhr67nd.cloudfront.net/w800h800/DSC_2701-1024x683.jpg)
+ - Photo of Warkworth Castle (Location 3) is provided by Visit Northumberland at the following URL [https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg]( https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg)
 
 
 
