@@ -1,5 +1,3 @@
-const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
-
 var locations = []
 var lovelyPlacesNorthumberland = [
   { lat: 55.18559938889182, lng: -1.5042083978634628 },
@@ -28,35 +26,68 @@ function lovelyPlacesNorthumberlandFunc() {
 document.getElementById("nice-places").addEventListener("click", lovelyPlacesNorthumberlandFunc);
 document.getElementById("clear").addEventListener("click", clearLocations);
 
-function initMap() {
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 1,
-    center: { lat: 55.2010113, lng: -1.9452985 },
+let map;
+
+async function initMap() {
+  // Request needed libraries.
+  const { Map, InfoWindow } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+    "marker"
+  );
+  const map = new Map(document.getElementById("map"), {
+    zoom: 12,
+    center: { lat: 34.84555, lng: -111.8035 },
+    mapId: "4504f8b37365c3d0",
   });
-  const infoWindow = new google.maps.InfoWindow({
-    content: `Content Here `,
-  });
-  // Create an array of alphabetical characters used to label the markers.
-  const labels = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  // Add some markers to the map.
-  const markers = locations.map((position, i) => {
-    const label = labels[i % labels.length];
-    const marker = new google.maps.Marker({
+  // Set LatLng and title text for the markers. The first marker (Boynton Pass)
+  // receives the initial focus when tab is pressed. Use arrow keys to
+  // move between markers; press tab again to cycle through the map controls.
+  const tourStops = [
+    {
+      position: { lat: 34.8791806, lng: -111.8265049 },
+      title: "Boynton Pass",
+    },
+    {
+      position: { lat: 34.8559195, lng: -111.7988186 },
+      title: "Airport Mesa",
+    },
+    {
+      position: { lat: 34.832149, lng: -111.7695277 },
+      title: "Chapel of the Holy Cross",
+    },
+    {
+      position: { lat: 34.823736, lng: -111.8001857 },
+      title: "Red Rock Crossing",
+    },
+    {
+      position: { lat: 34.800326, lng: -111.7665047 },
+      title: "Bell Rock",
+    },
+  ];
+  // Create an info window to share between markers.
+  const infoWindow = new InfoWindow();
+
+  // Create the markers.
+  tourStops.forEach(({ position, title }, i) => {
+    const pin = new PinElement({
+      glyph: `${i + 1}`,
+    });
+    const marker = new AdvancedMarkerElement({
       position,
-      label,
+      map,
+      title: `${i + 1}. ${title}`,
+      content: pin.element,
     });
 
-    // markers can only be keyboard focusable when they have click listeners
-    // open info window when marker is clicked
-    marker.addListener("click", () => {
-      infoWindow.setContent(label);
-      infoWindow.open(map, marker);
+    // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", ({ domEvent, latLng }) => {
+      const { target } = domEvent;
+
+      infoWindow.close();
+      infoWindow.setContent(marker.title);
+      infoWindow.open(marker.map, marker);
     });
-    return marker;
   });
-
-  // Add a marker clusterer to manage the markers.
-  new MarkerClusterer({ markers, map });
 }
 
-window.initMap = initMap;
+initMap();
