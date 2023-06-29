@@ -69,11 +69,11 @@ async function initMap() {
     });
      // Add a click listener for each marker, and set up the info window.
     marker.addListener("click", ({ domEvent, latLng }) => {
+      
       const { target } = domEvent;
 
       infoWindow.close();
-      infoWindow.setContent(
-        `
+      infoWindow.setContent(`
         <div id="info-window-left">
         <p><strong>Attraction Name: </strong>${title}<br></p>
         <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
@@ -81,9 +81,7 @@ async function initMap() {
         </div>
         <div id="info-window-right">
         <img src="${image}" alt="Photo of ${title}">
-        </div>
-        `
-        
+        </div>`
         );
       infoWindow.open(marker.map, marker);
     });
