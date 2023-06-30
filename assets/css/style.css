@@ -22,10 +22,26 @@ footer{
     width: 100vw;
     height:85vh;
 }
-
+.intro-visable {
+  transition: 0.5s ease-in-out;
+  width: 60% !important;
+}
+.show {
+  transition: 0.5s ease-in-out;
+  width: 40%;
+}
+.hide{
+  transition: 0.5s ease-in-out;
+  display: none;
+}
+.row {
+  flex-wrap: nowrap;
+  transition: 0.5s ease-in-out;
+}
   #info-window-left{
     width:66%; 
     display: inline-block;
+    vertical-align: top;
   }
   #info-window-left p {
     margin-bottom: 0.5rem;
@@ -70,5 +86,13 @@ footer{
     @media only screen and (max-width: 376px) {
         .nav-logo {
           height: 4.5vh;
+        }
+        .intro-visable {
+          transition: 0.5s ease-in-out;
+          width: 100% !important;
+        }
+        .show {
+          transition: 0.5s ease-in-out;
+          width: 100%;
         }
       }
