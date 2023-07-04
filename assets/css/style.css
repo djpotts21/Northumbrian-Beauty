@@ -18,44 +18,69 @@ footer{
     max-height: 7.5vh;
 }
 #map{
+  transition: 0.5s ease-in-out;
     display: inline;
     width: 100vw;
     height:85vh;
 }
-.intro-visable {
-  transition: 0.5s ease-in-out;
-  width: 60% !important;
+#show-as-list-toggle {
+  position: absolute;
+  right: 0;
 }
-.show {
-  transition: 0.5s ease-in-out;
+#sidebar-right {
   width: 40%;
-}
-.hide{
-  transition: 0.5s ease-in-out;
-  display: none;
+  max-height: 85vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .row {
   flex-wrap: nowrap;
   transition: 0.5s ease-in-out;
 }
-  #info-window-left{
-    width:66%; 
-    display: inline-block;
-    vertical-align: top;
-  }
-  #info-window-left p {
-    margin-bottom: 0.5rem;
-  }
-  #info-window-right{
-    width:33%; 
-    display: inline-block;
-    text-align: right;
-  }
-  #info-window-right img{
-    width: auto;
-    height: 116px;
-    vertical-align: unset;
-  }
+#info-window-left{
+  width:66%; 
+  display: inline-block;
+  vertical-align: top;
+}
+#info-window-left p {
+  margin-bottom: 0.5rem;
+}
+#info-window-right{
+  width:33%; 
+  display: inline-block;
+  text-align: right;
+}
+#info-window-right img{
+  width: auto;
+  height: 116px;
+  vertical-align: unset;
+}
+#list-content-text {
+  width: 80%;
+  font-size: 0.8em;
+  padding-right: 10px;
+}
+#list-content-text p {
+  margin-bottom: 0.2rem;
+}
+#list-content-image {
+  width: 20%;
+}
+#list-item {
+  display: flex;
+}
+#list-content-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  max-height: 100px;
+  margin-top: 1.7em;
+}
+div#list-item {
+  margin: 10px 0 10px;
+  border-bottom: 1px solid #c2c2c2;
+  padding-bottom: 10px;
+}
 
   
 
