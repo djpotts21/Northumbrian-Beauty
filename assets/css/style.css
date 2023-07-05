@@ -1,6 +1,17 @@
-.navbarNav{
-    height: 7.5vh;
-    max-height: 7.5vh;
+/* Generic Misc */
+body{
+  padding:0;
+  margin:0;
+  clear:both;
+  overflow:hidden;
+}
+
+/* Navbar */
+.navbar{
+  height: 7.5vh;
+  max-height: 7.5vh;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 .nav-logo{
     height: 4.5vh;
@@ -13,29 +24,42 @@
     color:#DA291C;
     border-bottom: #DA291C 2px solid;
 }
-footer{
-    height: 7.5vh;
-    max-height: 7.5vh;
+#show-as-list-toggle {
+  position: absolute;
+  right: 0;
 }
+
+/* Footer */
+footer{
+  height: 7.5vh;
+  max-height: 7.5vh;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+/* Main Body */
+.main-body{
+  max-height: 85vh;
+}
+
+/* Divs General Structure */ 
+  #sidebar-right {
+    width: 40%;
+    max-height: 85vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .row {
+    flex-wrap: nowrap;
+    transition: 0.5s ease-in-out;
+  }
+
+/* Map Structure */
 #map{
   transition: 0.5s ease-in-out;
     display: inline;
     width: 100vw;
     height:85vh;
-}
-#show-as-list-toggle {
-  position: absolute;
-  right: 0;
-}
-#sidebar-right {
-  width: 40%;
-  max-height: 85vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
-.row {
-  flex-wrap: nowrap;
-  transition: 0.5s ease-in-out;
 }
 #info-window-left{
   width:66%; 
@@ -55,6 +79,8 @@ footer{
   height: 116px;
   vertical-align: unset;
 }
+
+/* Sidebar List */
 #list-content-text {
   width: 80%;
   font-size: 0.8em;
@@ -68,6 +94,9 @@ footer{
 }
 #list-item {
   display: flex;
+  margin: 10px 0 10px;
+  border-bottom: 1px solid #c2c2c2;
+  padding-bottom: 10px;
 }
 #list-content-image img {
   height: 100%;
@@ -76,48 +105,77 @@ footer{
   max-height: 100px;
   margin-top: 1.7em;
 }
-div#list-item {
-  margin: 10px 0 10px;
-  border-bottom: 1px solid #c2c2c2;
-  padding-bottom: 10px;
+
+/* Intro overlay */
+#halt-info-startup {
+  position: absolute;
+  top: 7.5vh;
+  background: #ffffffbd;
+  height: 85vh;
+  transition: 0.5s ease-in-out;
+  max-height: 85vh;
+  overflow: scroll
+}
+#halt-info-startup p, #halt-info-startup ul {
+  margin-bottom: 0.5em;
+  font-size: 0.9em;
+}
+.hide-intro-fader {
+  opacity: 0;
+}
+.hide-intro-complete {
+  display:none ;
 }
 
-  
+/* Buttons */
+#get-started {
+  padding: 10px 20px 10px 20px;
+  border-radius: 12px;
+  width: 20vw;
+  border: 2px solid #DA291C;
+  font-weight: 600;
+  text-transform: uppercase;
+  background: #FFD100;
+  transition: 0.2s ease-in-out;
+}
+#get-started:hover {
+  background: #323232;
+  color: #FFD100;
+}
+
+/* Headings */
+h2 {
+  font-size: 1.6em;
+}
+.h3, h3 {
+  font-size: 1rem;
+  font-weight: 800;
+}
 
 
-  /*Tablet CSS*/
+  /*Mobile / Tablet CSS*/
   @media only screen and (max-width: 809px) {
+    /* Navbar */
     .navbar-brand {
-        font-size: 1.5em;
-      }
-      .nav-logo {
-        height: 8.5vh;
-      }
-      .gm-style-iw.gm-style-iw-c {
-        max-width: 95vw !important;
-      }
-      #info-window-left {
-        width: 100%;
-        display: inline-block;
-      }
-      .gm-style-iw-d {
-        max-height: 450px !important;
-        height: 35vh;
-      }
-      
+      font-size: 1.5em;
+    }
+    .nav-logo {
+      height: 4.5vh;        
+    }
+    #navbarNav {
+      z-index: 2;
+      background: white;
+    }
+    /* Map Structure */
+    .gm-style-iw.gm-style-iw-c {
+      max-width: 95vw !important;
+    }
+    #info-window-left {
+      width: 100%;
+      display: inline-block;
+    }
+    .gm-style-iw-d {
+      max-height: 450px !important;
+      height: 35vh;
+    }  
   }
-
-    /*Mobile CSS*/
-    @media only screen and (max-width: 376px) {
-        .nav-logo {
-          height: 4.5vh;
-        }
-        .intro-visable {
-          transition: 0.5s ease-in-out;
-          width: 100% !important;
-        }
-        .show {
-          transition: 0.5s ease-in-out;
-          width: 100%;
-        }
-      }
