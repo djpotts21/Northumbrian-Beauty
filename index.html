@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+        <div class="container-fluid g-0">
           <a class="navbar-brand" href="#">
             <img src="/assets/images/northumberland.webp" alt="Northumberland County Flag in shape of the county of Northumberland" class="d-inline-block align-text-top nav-logo">
             Northumbrian Beauty
@@ -28,23 +28,48 @@
                 <a class="nav-link" id="nice-places" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Nice Places</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="clear" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Clear</a>
+                <a class="nav-link" id="hidden-gems" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Hidden Gems</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" id="show-as-list-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Show as a List</a>
+                <a class="nav-link" id="places-to-stay" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Places to stay</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="places-to-eat" href="#" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">Places to eat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link show-list" id="show-as-list-toggle" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"></a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-      <div class="container-fluid">
+      <div class="container-fluid main-body">
         <div class="row">
           <div id="map">Sorry we can't load the map due to Javascript being blocked. Please allow JavaScript on this website to continue.</div>
           <div id="sidebar-right" class="hide"></div>
+          <div id="halt-info-startup">
+            <h1>Welcome to Northumbria Beauty</h1>
+            <h2>Introduction</h2>
+            <p>Welcome to the breathtaking world of Northumberland's hidden gems, curated by the renowned designer, Daniel Potts. This website is dedicated to showcasing the unparalleled beauty spots nestled within this picturesque region of England. Prepare to embark on a virtual journey through Northumberland's enchanting landscapes, where you will discover majestic castles, rolling hills, pristine beaches, and charming villages. Through Daniel's discerning eye, we invite you to immerse yourself in the natural wonders and captivating history that make Northumberland a true gem. Whether you are a nature lover, history enthusiast, or simply seeking inspiration, join us as we unveil the beauty of Northumberland, one stunning spot at a time.</p>
+            <h2>Getting started</h2>
+            <h3>The navigation bar</h3>
+            <p><strong>Location:</strong> At the top of the website (or in the hamburger menu on mobile). </p>
+            <p>Discover the beauty spots of Northumberland sing the various different menu options. Click on the map markers to view more information.</p>
+            <ul>
+              <li>Nice Places: A curated map and list of beauty spots in Northumberland.</li>
+              <li>Hidden Gems: A curated map and list of hidden gem locations in Northumberland.</li>
+              <li>Places to stay: A curated map and list of accomodations in Northumberland.</li>
+              <li>Places to eat: A curated map and list of places to eat in Northumberland.</li>
+            </ul>
+            <h3>The side bar</h3>
+            <p><strong>Location:</strong> Right hand side of the website (Not avaialble on mobile). </p>
+            <p>View data displayed on the map in a list format. Open or Close using the "Show as a List" or "Hide List" on the right hand side of the navigation bar.</p>
+            <button id="get-started">Get started</button>
+          </div>
         </div>
       </div>
       <footer>
-        Footer Text
+        Copyright © 2023 - Daniel Potts | GitHub: <a href="https://github.com/djpotts21" alt="Link to github profile @djpotts21">@djpotts21</a>
       </footer>
 </body>
 <script>
