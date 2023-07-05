@@ -2,53 +2,6 @@ import {lovelyPlacesNorthumberland} from "./placesdata.js"
 
 var locations = []
 
-function toggleSidebarRight() {
-  if (document.getElementById("show-as-list-toggle").classList.contains("show-list")){
-    document.getElementById("map").style.width = '60%';
-    document.getElementById("show-as-list-toggle").innerText = "Hide List";
-    document.getElementById("show-as-list-toggle").classList.remove("show-list")
-    document.getElementById("show-as-list-toggle").classList.add("hide-list")
-  }
-  else {
-    document.getElementById("map").style.width = '100%';
-    document.getElementById("show-as-list-toggle").innerText = "Show as a List";
-    document.getElementById("show-as-list-toggle").classList.remove("hide-list")
-    document.getElementById("show-as-list-toggle").classList.add("show-list")
-  }
-}
-function reset() {
-  document.getElementById("halt-info-startup").classList.remove("hide-intro-fader")
-  document.getElementById("halt-info-startup").classList.remove("hide-intro-complete")
-  document.getElementById("show-as-list-toggle").innerText = "";
-  document.getElementById("sidebar-right").innerHTML = ""
-  locations = []; 
-  initMap();
-}
-
-function lovelyPlacesNorthumberlandFunc() {
-  closeIntro()
-  document.getElementById("show-as-list-toggle").innerText = "Show as a List";
-  document.getElementById("sidebar-right").innerHTML = ""
-  locations = lovelyPlacesNorthumberland; 
-  initMap();
-}
-
-function closeIntro(){
-  document.getElementById("halt-info-startup").classList.add("hide-intro-fader")
-  setTimeout(function(){
-    document.getElementById("halt-info-startup").classList.add("hide-intro-complete")
-  }, 500)
-}
-
-
-
-document.getElementById("home").addEventListener("click", reset);
-document.getElementById("get-started").addEventListener("click", lovelyPlacesNorthumberlandFunc);
-document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
-document.getElementById("nice-places").addEventListener("click", lovelyPlacesNorthumberlandFunc);
-document.getElementById("clear").addEventListener("click", reset);
-
-
 let map;
 async function initMap() {
   
@@ -108,4 +61,60 @@ async function initMap() {
   });
 
 }
+initMap();  
+
+function addBlurToMap() {
+  document.getElementById("map").classList.remove("no-blur")
+  document.getElementById("map").classList.add("blur")
+}
+function removeBlurFromMap() {
+  document.getElementById("map").classList.remove("blur")
+  document.getElementById("map").classList.add("no-blur")
+}
+function toggleSidebarRight() {
+  if (document.getElementById("show-as-list-toggle").classList.contains("show-list")){
+    document.getElementById("map").style.width = '60%';
+    document.getElementById("show-as-list-toggle").innerText = "Hide List";
+    document.getElementById("show-as-list-toggle").classList.remove("show-list")
+    document.getElementById("show-as-list-toggle").classList.add("hide-list")
+  }
+  else {
+    document.getElementById("map").style.width = '100%';
+    document.getElementById("show-as-list-toggle").innerText = "Show as a List";
+    document.getElementById("show-as-list-toggle").classList.remove("hide-list")
+    document.getElementById("show-as-list-toggle").classList.add("show-list")
+  }
+}
+function reset() {
+  addBlurToMap();
+  openIntro()
+  document.getElementById("show-as-list-toggle").innerText = "";
+  document.getElementById("sidebar-right").innerHTML = ""
+  locations = []; 
   initMap();
+}
+function lovelyPlacesNorthumberlandFunc() {
+  closeIntro();
+  document.getElementById("show-as-list-toggle").innerText = "Show as a List";
+  document.getElementById("sidebar-right").innerHTML = ""
+  locations = lovelyPlacesNorthumberland; 
+  initMap();
+}
+function closeIntro(){
+  removeBlurFromMap()
+  document.getElementById("halt-info-startup").classList.add("hide-intro-fader")
+  setTimeout(function(){
+    document.getElementById("halt-info-startup").classList.add("hide-intro-complete")
+  }, 500)
+}
+function openIntro(){
+  document.getElementById("halt-info-startup").classList.remove("hide-intro-fader")
+  document.getElementById("halt-info-startup").classList.remove("hide-intro-complete")
+}
+
+
+
+document.getElementById("home").addEventListener("click", reset);
+document.getElementById("get-started").addEventListener("click", lovelyPlacesNorthumberlandFunc);
+document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
+document.getElementById("nice-places").addEventListener("click", lovelyPlacesNorthumberlandFunc);

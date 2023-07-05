@@ -1,3 +1,10 @@
+/* Fonts */
+h1, h2, h3, h4, h5, h6, nav, footer {
+  font-family: 'Poppins', sans-serif;
+}
+p, span, ul, ol, button {
+  font-family: 'Roboto', sans-serif;
+}
 /* Generic Misc */
 body{
   padding:0;
@@ -5,13 +12,22 @@ body{
   clear:both;
   overflow:hidden;
 }
+.blur {
+  filter: blur(1px);
+  transition: 0.5s ease-in-out;
+}
+.no-blur{
+  filter: blur(0px);
+  transition: 0.5s ease-in-out;
+}
 
 /* Navbar */
 .navbar{
   height: 7.5vh;
   max-height: 7.5vh;
+}
+.navbar-brand{
   padding-left: 0.5em;
-  padding-right: 0.5em;
 }
 .nav-logo{
     height: 4.5vh;
@@ -27,7 +43,16 @@ body{
 #show-as-list-toggle {
   position: absolute;
   right: 0;
+  margin-right: 0.5em;
 }
+.navbar-toggler:focus {
+  box-shadow: unset;
+}
+.navbar-toggler {
+  border: unset;
+  padding-right: 0.5em;
+}
+
 
 /* Footer */
 footer{
@@ -35,6 +60,7 @@ footer{
   max-height: 7.5vh;
   padding-left: 0.5em;
   padding-right: 0.5em;
+  line-height: 3em;
 }
 
 /* Main Body */
@@ -114,7 +140,8 @@ footer{
   height: 85vh;
   transition: 0.5s ease-in-out;
   max-height: 85vh;
-  overflow: scroll
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 #halt-info-startup p, #halt-info-startup ul {
   margin-bottom: 0.5em;
@@ -166,6 +193,9 @@ h2 {
       z-index: 2;
       background: white;
     }
+    .nav-item{
+      margin:  0 10px 010px;
+    }
     /* Map Structure */
     .gm-style-iw.gm-style-iw-c {
       max-width: 95vw !important;
@@ -178,4 +208,10 @@ h2 {
       max-height: 450px !important;
       height: 35vh;
     }  
+    #sidebar-right {
+      display: none;
+    }
+    #show-as-list-toggle {
+      display: none;
+    }
   }
