@@ -17,11 +17,21 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 This view should consist of a map taking out 80% of the page, a Logo / Nav Bar at the top and a footer at the bottom. The view should also include a right sidebar which is expandable and collapsable which displays the contents of the map in list form.
 
 ### Wireframes
+#### Desktop
 - [Home/Default View (no introduction)](/assets/images/wireframe/1-Homepage.png)
-- [Home/Default View (with introduction overlay)](/assets/images/wireframe/2-Map-with-sidebar.png)
-- [Map View (with sidebar)](/assets/images/wireframe/3-Homepage-with-intro.png)
+- [Home/Default View (with introduction overlay)](/assets/images/wireframe/3-Homepage-with-intro.png)
+- [Map View (with sidebar)](/assets/images/wireframe/2-Map-with-sidebar.png)
+#### Mobile
+- [Home/Default View (no introduction)](/assets/images/wireframe/Mobile%20%201-Homepage.png
+- [Home/Default View (with introduction overlay)](/assets/images/wireframe/Mobile%20%203-Homepage-with-intro.png)
+- [Map View](/assets/images/wireframe/Mobile%20%202-Map-with-sidebar.png)
+#### Tablet
+- [Home/Default View (no introduction)](/assets/images/wireframe/Tablet%20-%201-Homepage.png)
+- [Home/Default View (with introduction overlay)](/assets/images/wireframe/Tablet%20-%203-Homepage-with-intro.png)
+- [Map View (with sidebar)](/assets/images/wireframe/Tablet%20-%202-Map-with-sidebar.png)
 
 ### Finished Project Views
+#### Desktop
 - [Home](/assets/images/final-project/Home.png)
 - [Nice Places (No Sidebar)](/assets/images/final-project/Nice%20Places%20(No%20Sidebar).png)
 - [Hidden Gems (No Sidebar)](/assets/images/final-project/Hidden%20Gems%20(No%20Sidebar).png)
@@ -31,6 +41,22 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Hidden Gems (With Sidebar)](/assets/images/final-project/Hidden%20Gems%20(Sidebar%20Open).png)
 - [Places to stay (With Sidebar)](/assets/images/final-project/Places%20to%20Stay%20%20(Sidebar%20Open).png)
 - [Places to eat (With Sidebar)](/assets/images/final-project/Places%20to%20Eat%20%20(Sidebar%20Open).png)
+#### Mobile
+- [Home](/assets/images/final-project/Mobile%20-%20Home.png)
+- [Nice Places](/assets/images/final-project/Mobile%20-%20Nice%20Places.png)
+- [Hidden Gems](/assets/images/final-project/Mobile%20-%20Hidden%20Gems.png)
+- [Places to stay](/assets/images/final-project/Mobile%20-%20Places%20to%20Stay.png)
+- [Places to eat](/assets/images/final-project/Mobile%20-%20Places%20To%20Eat.png)
+#### Tablet
+- [Home](/assets/images/final-project/Tablet%20-%20Home.png)
+- [Nice Places (No Sidebar)](/assets/images/final-project/Tablet%20-%20Nice%20Places%20(no%20Sidebar).png)
+- [Hidden Gems (No Sidebar)](/assets/images/final-project/Tablet%20-%20Hidden%20Gems%20(no%20Sidebar).png)
+- [Places to stay (No Sidebar)](/assets/images/final-project/Tablet%20-%20Places%20to%20Stay%20(no%20Sidebar).png)
+- [Places to eat (No Sidebar)](/assets/images/final-project/Tablet%20-%20Places%20to%20eat%20(no%20Sidebar).png)
+- [Nice Places (With Sidebar)](/assets/images/final-project/Tablet%20-%20Nice%20Places%20(sidebar).png)
+- [Hidden Gems (With Sidebar)](/assets/images/final-project/Tablet%20-%20Hidden%20Gems%20(sidebar).png)
+- [Places to stay (With Sidebar)](/assets/images/final-project/Tablet%20-%20Places%20to%20Stay%20(Sidebar).png)
+- [Places to eat (With Sidebar)](/assets/images/final-project/Tablet%20-%20Places%20to%20eat%20(Sidebar).png)
 
 ### Finished Project URL
 Available on GitPages at the following url [https://djpotts21.github.io/Northumbrian-Beauty/](https://djpotts21.github.io/Northumbrian-Beauty/)
