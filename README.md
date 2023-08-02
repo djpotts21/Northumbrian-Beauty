@@ -22,15 +22,20 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Map View (with sidebar)](/assets/images/wireframe/3-Homepage-with-intro.png)
 
 ### Finished Project Views
-- [Home]()
-- [Nice Places]()
-- [Hidden Gems]()
-- [Places to stay]()
-- [Places to eat]()
+- [Home](/assets/images/final-project/Home.png)
+- [Nice Places (No Sidebar)](/assets/images/final-project/Nice%20Places%20(No%20Sidebar).png)
+- [Hidden Gems (No Sidebar)](/assets/images/final-project/Hidden%20Gems%20(No%20Sidebar).png)
+- [Places to stay (No Sidebar)](/assets/images/final-project/Places%20to%20Stay%20%20(No%20Sidebar).png)
+- [Places to eat (No Sidebar)](/assets/images/final-project/Places%20to%20eat%20(No%20Sidebar).png)
+- [Nice Places (With Sidebar)](/assets/images/final-project/Nice%20Places%20(Sidebar%20Open).png)
+- [Hidden Gems (With Sidebar)](/assets/images/final-project/Hidden%20Gems%20(Sidebar%20Open).png)
+- [Places to stay (With Sidebar)](/assets/images/final-project/Places%20to%20Stay%20%20(Sidebar%20Open).png)
+- [Places to eat (With Sidebar)](/assets/images/final-project/Places%20to%20Eat%20%20(Sidebar%20Open).png)
 
 ## Testing
 ### Javascript Built-in Testing
-This app uses built in testing by Jest, to run the test deploy the site to server environment and run "npm test".
+This app uses built in testing by Jest, to run the test deploy the site to server environment and run "npm test". The npm test was ran and screenshots saved to are located here > [/assets/images/test-results/npmtestresults.png](/assets/images/test-results/npmtestresults.png)
+
 
 ### Javascript External Testing
 The javascript was tested using the validator service at beautifytools.com [https://beautifytools.com/javascript-validator.php](https://beautifytools.com/javascript-validator.php), the results show the errors which are from the Google provided code and I suspect it is being caused due to the imported scripts not being loaded. > Added to known bugs. The results in screenshot format are located here
