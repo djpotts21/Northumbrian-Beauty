@@ -245,6 +245,7 @@ function openIntro(){
 
 
 document.addEventListener('DOMContentLoaded', () => {
+document.getElementById("nav-logo").addEventListener("click", reset);
 document.getElementById("home").addEventListener("click", reset);
 document.getElementById("get-started").addEventListener("click", lovelyPlacesNorthumberlandFunc);
 document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
