@@ -33,6 +33,7 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 This app uses built in testing by Jest, to run the test deploy the site to server environment and run "npm test".
 
 ### Javascript External Testing
+The javascript was tested using the validator service at beautifytools.com [https://beautifytools.com/javascript-validator.php](https://beautifytools.com/javascript-validator.php), the results show the errors which are from the Google provided code and I suspect it is being caused due to the imported scripts not being loaded. > Added to known bugs. The results in screenshot format are located here
 
 ### HTML External Testing
 The html was tested using the validator service at w3.org [https://validator.w3.org/nu/#textarea](https://validator.w3.org/nu/#textarea) the results in screenshot format are located here > [/assets/images/test-results/htmlresults.png](/assets/images/test-results/htmlresults.png)
@@ -64,11 +65,24 @@ All location blurbs / descriptions are snippets of text taken from each website 
 )
  - Photo of Warkworth Castle (Nice places, Location 4) is provided by Visit Northumberland at the following URL [https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg](https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg)
 - Photo of Alnwick Castle (Nice places, Location 5) is provided by Third Eye Traveller at the following URL [https://thirdeyetraveller.com/wp-content/uploads/NORTHUMBERLAND-14-of-18.jpg](https://thirdeyetraveller.com/wp-content/uploads/NORTHUMBERLAND-14-of-18.jpg)
+
 - Photo of Northumberlandia, the Lady of the North (Hidden Gems, Location 1) is provided by Northumberlandia.com at the following url [https://www.northumberlandia.com/wp-content/themes/northumberlandia/slider/nlandia_P9_front.jpg](https://www.northumberlandia.com/wp-content/themes/northumberlandia/slider/nlandia_P9_front.jpg)
 - Photo of Angel Of Northumberland (Hidden Gems, Location 2) is provided by fabulousnorth.com at the following url [https://cdn.fabulousnorth.com/fabulous-north/place/20220410-114400-366aace5cf1.jpg?width=1320](https://cdn.fabulousnorth.com/fabulous-north/place/20220410-114400-366aace5cf1.jpg?width=1320)
  - Photo of Emily Wilding Davison Statue And Grave (Hidden Gems, Location 3) is provided by fabulousnorth.com at the following url [https://cdn.fabulousnorth.com/fabulous-north/place/emily-wilding-davison-statue-and-grave.jpg?width=500&aspect_ratio=269:200&quality=85](https://cdn.fabulousnorth.com/fabulous-north/place/emily-wilding-davison-statue-and-grave.jpg?width=500&aspect_ratio=269:200&quality=85)
  - Photo of Percy Tenantry Column (Hidden Gems, Location 4) is provided by fabulousnorth.com at the following url [https://cdn.fabulousnorth.com/fabulous-north/place/percy-tenantry-column-5c7fec30daa.jpg?width=500&aspect_ratio=269:200&quality=85](https://cdn.fabulousnorth.com/fabulous-north/place/percy-tenantry-column-5c7fec30daa.jpg?width=500&aspect_ratio=269:200&quality=85)
  - Photo of Grace Darling Monument (Hidden Gems, Location 5) is provided by fabulousnorth.com at the following url [https://cdn.fabulousnorth.com/fabulous-north/place/grace-darling-grave.jpg?width=500&aspect_ratio=269:200&quality=85] (https://cdn.fabulousnorth.com/fabulous-north/place/grace-darling-grave.jpg?width=500&aspect_ratio=269:200&quality=85)
+
+ - Photo of Beautiful Town Centre Cottage, Hot Tub - Morpeth (Places to stay, Location 1) is provided by Airbnb.com at the following url [https://a0.muscache.com/im/pictures/e1a488b2-0893-453f-aaff-eb007f6809c5.jpg?im_w=720](https://a0.muscache.com/im/pictures/e1a488b2-0893-453f-aaff-eb007f6809c5.jpg?im_w=720)
+ - Photo of Off-grid woodland hide-away - Westhills Pod (Places to stay, Location 2) is provided by Airbnb.com at the following url [https://a0.muscache.com/im/pictures/9ff5d626-06da-475a-87bc-e3efcf07d304.jpg?im_w=720](https://a0.muscache.com/im/pictures/9ff5d626-06da-475a-87bc-e3efcf07d304.jpg?im_w=720)
+ - Photo of Beach Cottage (Places to stay, Location 3) is provided by Airbnb.com at the following url [https://a0.muscache.com/im/pictures/7c3535bb-a942-40bf-8af8-f6d93494d0b6.jpg?im_w=720](https://a0.muscache.com/im/pictures/7c3535bb-a942-40bf-8af8-f6d93494d0b6.jpg?im_w=720)
+ - Photo of The Byre. Cosy, eco friendly barn camping. (Places to stay, Location 4) is provided by Airbnb.com at the following url [https://a0.muscache.com/im/pictures/9989ecc9-a75c-45b7-96a7-0f64be10f8ef.jpg?im_w=1200](https://a0.muscache.com/im/pictures/9989ecc9-a75c-45b7-96a7-0f64be10f8ef.jpg?im_w=1200)
+  - Photo of Deluxe Detached Cabin at Newton Hall (Places to stay, Location 5) is provided by Airbnb.com at the following url [https://a0.muscache.com/im/pictures/miso/Hosting-767114813888508457/original/85752517-6c88-4f28-b572-c676236f39f0.jpeg?im_w=1200](https://a0.muscache.com/im/pictures/miso/Hosting-767114813888508457/original/85752517-6c88-4f28-b572-c676236f39f0.jpeg?im_w=1200)
+
+ - Photo of The Fish Shack (Places to eat, Location 1) is provided by Boathouse Food Group at the following url [https://www.boathousefoodgroup.co.uk/wp-content/uploads/2017/10/fish-shack-01-1400x860.jpg](https://www.boathousefoodgroup.co.uk/wp-content/uploads/2017/10/fish-shack-01-1400x860.jpg)
+ - Photo of Lollo Rosso Italia (Places to eat, Location 2) is provided by Lollo Rosso Italia at the following url [https://lollorossoitalia.com/wp-content/uploads/lollorossostairs.jpg](https://lollorossoitalia.com/wp-content/uploads/lollorossostairs.jpg)
+ - Photo of Little Mexico (Places to eat, Location 3) is provided by Loke.app https://littlemexico.loke.app/ at the following url [https://assets-tidy.s3-ap-southeast-2.amazonaws.com/org/01F5ANHYE69KDY7D7SXSASPN4J/theme/Web-Banner_01FBGSEPJ8S1RAKACQXC3VHMFB.png](https://assets-tidy.s3-ap-southeast-2.amazonaws.com/org/01F5ANHYE69KDY7D7SXSASPN4J/theme/Web-Banner_01FBGSEPJ8S1RAKACQXC3VHMFB.png)
+ - Photo of The Pheasant Inn (Places to eat, Location 4) is provided by The Pheasant Inn at the following url [https://www.thepheasantinn.com/assets/cache/images/header/pheasant_inn_northumberland_exterior_2-490x-96a.jpg](https://www.thepheasantinn.com/assets/cache/images/header/pheasant_inn_northumberland_exterior_2-490x-96a.jpg)
+ - Photo of Ad Gefrin (Places to eat, Location 5) is provided by Ad Gefrin at the following url [https://adgefrin.co.uk/image/crop/1679921745_3e46d06328ee3c4ac6b3.jpg/1800/1000](https://adgefrin.co.uk/image/crop/1679921745_3e46d06328ee3c4ac6b3.jpg/1800/1000)
 
 
 
@@ -80,3 +94,8 @@ All location blurbs / descriptions are snippets of text taken from each website 
 | Northumberland Flag (Yellow)  | #FFD100 | Pantone®: Yellow 109
 
 
+## Bugs
+1. NPM test only works if you add the code which should be loaded in a script tag in index.html, to the script.js. This issue seems to be coming from functions not being loaded during the tests which causes errors.
+1. FIX = Added code to the script.js from lines 1 - 6
+
+2. As a result of the fix for bug 1, online JSLint tools are erroring with the code in line 1 - 6. I found another tool which seems to work differently and validates the JS fine.
