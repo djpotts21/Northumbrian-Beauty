@@ -23,5 +23,15 @@ describe("DOM tests", () => {
         expect(document.getElementById("show-as-list-toggle")
             .innerText).toEqual("Show as a List");
     });
+    test("Expects intro text to show on reset", () => {
+        reset();
+        expect(document.getElementById("halt-info-startup")
+            .className).not.toEqual("hide-intro-complete");
+    });
+    test("Expects intro text to hide on content loaded for map", () => {
+        lovelyPlacesNorthumberlandFunc();
+        expect(document.getElementById("halt-info-startup")
+            .className).toEqual("hide-intro-fader");
+    });
 });
 
