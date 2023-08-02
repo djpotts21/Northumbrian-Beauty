@@ -22,7 +22,7 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Home/Default View (with introduction overlay)](/assets/images/wireframe/3-Homepage-with-intro.png)
 - [Map View (with sidebar)](/assets/images/wireframe/2-Map-with-sidebar.png)
 #### Mobile
-- [Home/Default View (no introduction)](/assets/images/wireframe/Mobile%20%201-Homepage.png
+- [Home/Default View (no introduction)](/assets/images/wireframe/Mobile%20%201-Homepage.png)
 - [Home/Default View (with introduction overlay)](/assets/images/wireframe/Mobile%20%203-Homepage-with-intro.png)
 - [Map View](/assets/images/wireframe/Mobile%20%202-Map-with-sidebar.png)
 #### Tablet
