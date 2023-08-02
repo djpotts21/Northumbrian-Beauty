@@ -32,6 +32,9 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Places to stay (With Sidebar)](/assets/images/final-project/Places%20to%20Stay%20%20(Sidebar%20Open).png)
 - [Places to eat (With Sidebar)](/assets/images/final-project/Places%20to%20Eat%20%20(Sidebar%20Open).png)
 
+### Finished Project URL
+Available on GitPages at the following url [https://djpotts21.github.io/Northumbrian-Beauty/](https://djpotts21.github.io/Northumbrian-Beauty/)
+
 ## Testing
 ### Javascript Built-in Testing
 This app uses built in testing by Jest, to run the test deploy the site to server environment and run "npm test". The npm test was ran and screenshots saved to are located here > [/assets/images/test-results/npmtestresults.png](/assets/images/test-results/npmtestresults.png)
