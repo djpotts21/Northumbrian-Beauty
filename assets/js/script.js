@@ -310,4 +310,4 @@ async function initMap() {
 
 } 
 
-module.exports = { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland, eatInNorthumberland };
+export { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland, eatInNorthumberland };
