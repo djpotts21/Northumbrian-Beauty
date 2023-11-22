@@ -4,13 +4,13 @@ h1, h2, h3, h4, h5, h6, nav, footer {
 }
 p, span, ul, ol, button {
   font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 /* Generic Misc */
 body{
   padding:0;
   margin:0;
   clear:both;
-  overflow:hidden;
 }
 .blur {
   filter: blur(1px);
@@ -67,7 +67,16 @@ footer{
 .main-body{
   max-height: 85vh;
 }
+.content-container {
+  padding: 20px;
+}
+.inner-content-container {
+  padding-bottom: 20px;
+}
 
+.justify-text{
+  text-align: justify;
+}
 /* Divs General Structure */ 
   #sidebar-right {
     width: 40%;

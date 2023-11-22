@@ -159,16 +159,6 @@
   ];
 var locations = [];
 
-function addBlurToMap() {
-  document.getElementById("map").classList.remove("no-blur");
-  document.getElementById("map").classList.add("blur");
-}
-
-function removeBlurFromMap() {
-  document.getElementById("map").classList.remove("blur");
-  document.getElementById("map").classList.add("no-blur");
-}
-
 
 function toggleSidebarRight() {
   if (document.getElementById("show-as-list-toggle").classList.contains("show-list")){
@@ -187,8 +177,6 @@ function toggleSidebarRight() {
 
 
 function reset() {
-  addBlurToMap();
-  openIntro();
   document.getElementById("show-as-list-toggle").innerText = "";
   document.getElementById("sidebar-right").innerHTML = "";
   locations = []; 
@@ -196,16 +184,9 @@ function reset() {
 }
 
 
-function lovelyPlacesNorthumberlandFunc() {
-  closeIntro();
-  document.getElementById("show-as-list-toggle").innerText = "Show as a List";
-  document.getElementById("sidebar-right").innerHTML = "";
-  locations = lovelyPlacesNorthumberland; 
-  initMap();
-}
+
 
 function hiddenGemsNorthumberlandFunc() {
-  closeIntro();
   document.getElementById("show-as-list-toggle").innerText = "Show as a List";
   document.getElementById("sidebar-right").innerHTML = "";
   locations = hiddenGemsNorthumberland; 
@@ -213,52 +194,62 @@ function hiddenGemsNorthumberlandFunc() {
 }
 
 function stayInNorthumberlandFunc() {
-  closeIntro();
   document.getElementById("show-as-list-toggle").innerText = "Show as a List";
   document.getElementById("sidebar-right").innerHTML = "";
   locations = stayInNorthumberland; 
+  let map;
   initMap();
 }
 
 function eatInNorthumberlandFunc() {
-  closeIntro();
   document.getElementById("show-as-list-toggle").innerText = "Show as a List";
   document.getElementById("sidebar-right").innerHTML = "";
   locations = eatInNorthumberland; 
+  let map;
   initMap();
 }
 
-function closeIntro(){
-  removeBlurFromMap();
-  document.getElementById("halt-info-startup").setAttribute("aria-disabled", "true");
-  document.getElementById("halt-info-startup").classList.add("hide-intro-fader");
-  setTimeout(function(){
-    document.getElementById("halt-info-startup").classList.add("hide-intro-complete");
-  }, 500);
-}
+if (window.location.href.includes('nice-places')) {
+    document.getElementById("show-as-list-toggle").innerText = "Show as a List";
+    document.getElementById("sidebar-right").innerHTML = "";
+    locations = lovelyPlacesNorthumberland;
+    document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
+    let map;
+    initMap();
+  }
+else if (window.location.href.includes('hidden-gems')) {
+    document.getElementById("show-as-list-toggle").innerText = "Show as a List";
+    document.getElementById("sidebar-right").innerHTML = "";
+    locations = hiddenGemsNorthumberland; 
+    document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
+    let map;
+    initMap();
+  }
+else if (window.location.href.includes('places-to-stay')) {
+    document.getElementById("show-as-list-toggle").innerText = "Show as a List";
+    document.getElementById("sidebar-right").innerHTML = "";
+    document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
+    locations = stayInNorthumberland; 
+    let map;
+    initMap();
+  }
+else if (window.location.href.includes('places-to-eat')) {
+    document.getElementById("show-as-list-toggle").innerText = "Show as a List";
+    document.getElementById("sidebar-right").innerHTML = "";
+    document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
+    locations = eatInNorthumberland; 
+    let map;
+    initMap();
+  }
+else {
+    
+  }
 
-function openIntro(){
-  document.getElementById("halt-info-startup").classList.remove("hide-intro-fader");
-  document.getElementById("halt-info-startup").classList.remove("hide-intro-complete");
-  document.getElementById("halt-info-startup").setAttribute("aria-disabled", "false");
-}
-
-
-document.addEventListener('DOMContentLoaded', () => {
-document.getElementById("nav-logo").addEventListener("click", reset);
-document.getElementById("home").addEventListener("click", reset);
-document.getElementById("get-started").addEventListener("click", lovelyPlacesNorthumberlandFunc);
-document.getElementById("show-as-list-toggle").addEventListener("click", toggleSidebarRight);
-document.getElementById("nice-places").addEventListener("click", lovelyPlacesNorthumberlandFunc);
-document.getElementById("hidden-gems").addEventListener("click", hiddenGemsNorthumberlandFunc);
-document.getElementById("places-to-stay").addEventListener("click", stayInNorthumberlandFunc);
-document.getElementById("places-to-eat").addEventListener("click", eatInNorthumberlandFunc);
-});
 
 
 //Google Maps
 
-let map;
+// let map;
 async function initMap() {
   
   const { Map, InfoWindow } = await google.maps.importLibrary("maps");
@@ -317,8 +308,4 @@ async function initMap() {
     `;
   });
 
-}
-
-initMap();  
-
-module.exports = [lovelyPlacesNorthumberlandFunc, reset];
+} 
