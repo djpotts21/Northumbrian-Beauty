@@ -337,4 +337,5 @@ async function initMap() {
 
 }
 
+
 module.exports = { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland, eatInNorthumberland }; 

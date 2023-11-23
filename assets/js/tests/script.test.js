@@ -3,7 +3,7 @@
  */
 
 // Import the function to test
-const { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland } = require('./script.js');
+import { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland } from '../script.js';
 
 // Test suite for lovelyPlacesNorthumberland
 describe('lovelyPlacesNorthumberland', () => {
