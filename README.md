@@ -71,7 +71,13 @@ Available on GitPages at the following URL [https://djpotts21.github.io/Northumb
 
 ## Testing
 ### Javascript Built-in Testing
-This app uses built-in testing by Jest, to run the test and deploy the site to the server environment, uncomment line 341 of the assets/js/script.js file which starts "module.exports..." then run "npm test" in your terminal window. The npm test was run and the screenshots saved are located here > [/assets/images/test-results/npmtestresults.png](/assets/images/test-results/npmtestresults.png)
+This app uses built-in testing by Jest. The test suite is located in the assets/js/_tests_ folder named script.test.js
+
+This test script checks each array of data in the main script has data and is correctly formated to prevent future addtions to the array being incorrectly formated and as such returnin incorrect or inaccurate data to the user.
+
+To run the test and deploy the site to the server environment, uncomment line 341 of the assets/js/script.js file which starts "module.exports..." then run "npm test" in your terminal window. 
+
+Our results -  The npm test was run and the screenshots saved are located here > [/assets/images/test-results/npmtestresults.png](/assets/images/test-results/npmtestresults.png)
 
 
 ### Javascript External Testing
