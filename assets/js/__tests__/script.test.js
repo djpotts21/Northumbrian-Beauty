@@ -3,7 +3,8 @@
  */
 
 // Import the function to test
-import { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland } from '../script.js';
+// import { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland } from '../script.js';
+const { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland } = require('../script')
 
 // Test suite for lovelyPlacesNorthumberland
 describe('lovelyPlacesNorthumberland', () => {
@@ -56,3 +57,5 @@ describe('stayInNorthumberland', () => {
     });
   });
 });
+
+console.log("running")
