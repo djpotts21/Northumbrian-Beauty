@@ -53,9 +53,6 @@ function getDestinationNameFromQueryString() {
   }
 
   // Set values in html
-  let latLongValue = getLatLongFromQueryString();
-  document.querySelector('.latlong').textContent = latLongValue;
-
   let destinationName = getDestinationNameFromQueryString();
   document.querySelector('.route-to').textContent = destinationName;
 
@@ -70,8 +67,8 @@ function getDestinationNameFromQueryString() {
     // Create a map object
       const { Map } = await google.maps.importLibrary("maps");
     const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 37.7749, lng: -122.4194 }, // Set the initial map center
-      zoom: 12, // Set the initial zoom level
+      center: { lat: 55.299360566294155, lng: -2.0132524486701318 }, // Set the initial map center
+      zoom: 9, // Set the initial zoom level
     });
 
     // Create a directions service object
@@ -83,8 +80,8 @@ function getDestinationNameFromQueryString() {
     });
 
     // Define the origin and destination for the directions
-    const origin = "San Francisco, CA";
-    const destination = "Los Angeles, CA";
+    const origin = "Bedlington, UK";
+    const destination = destinationName;
 
     // Create a directions request object
     const request = {
