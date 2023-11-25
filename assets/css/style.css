@@ -6,6 +6,12 @@ p, span, ul, ol, button {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
+.route-to {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
 /* Generic Misc */
 body{
   padding:0;
@@ -85,7 +91,7 @@ footer{
     overflow-y: scroll;
   }
   .row {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
     transition: 0.5s ease-in-out;
   }
 
