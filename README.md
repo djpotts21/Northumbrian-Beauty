@@ -49,12 +49,14 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Hidden Gems (With Sidebar)](/assets/images/final-project/Hidden%20Gems%20(Sidebar%20Open).png)
 - [Places to stay (With Sidebar)](/assets/images/final-project/Places%20to%20Stay%20%20(Sidebar%20Open).png)
 - [Places to eat (With Sidebar)](/assets/images/final-project/Places%20to%20Eat%20%20(Sidebar%20Open).png)
+- [Take me there (Get Directions Page)](/assets/images/final-project/Take-Me-There.png)
 #### Mobile
 - [Home](/assets/images/final-project/Mobile%20-%20Home.png)
 - [Nice Places](/assets/images/final-project/Mobile%20-%20Nice%20Places.png)
 - [Hidden Gems](/assets/images/final-project/Mobile%20-%20Hidden%20Gems.png)
 - [Places to stay](/assets/images/final-project/Mobile%20-%20Places%20to%20Stay.png)
 - [Places to eat](/assets/images/final-project/Mobile%20-%20Places%20To%20Eat.png)
+- [Take me there (Get Directions Page)](/assets/images/final-project/Mobile%20-%20Take-Me-There.png)
 #### Tablet
 - [Home](/assets/images/final-project/Tablet%20-%20Home.png)
 - [Nice Places (No Sidebar)](/assets/images/final-project/Tablet%20-%20Nice%20Places%20(no%20Sidebar).png)
@@ -65,6 +67,7 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Hidden Gems (With Sidebar)](/assets/images/final-project/Tablet%20-%20Hidden%20Gems%20(sidebar).png)
 - [Places to stay (With Sidebar)](/assets/images/final-project/Tablet%20-%20Places%20to%20Stay%20(Sidebar).png)
 - [Places to eat (With Sidebar)](/assets/images/final-project/Tablet%20-%20Places%20to%20eat%20(Sidebar).png)
+- [Take me there (Get Directions Page)](/assets/images/final-project/Tablet%20-%20Take-Me-There.png)
 
 ### Finished Project URL
 Available on GitPages at the following URL [https://djpotts21.github.io/Northumbrian-Beauty/](https://djpotts21.github.io/Northumbrian-Beauty/)
