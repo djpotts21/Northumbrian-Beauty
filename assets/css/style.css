@@ -230,6 +230,7 @@ div#popup {
   margin-right: auto;
   width: 100%;
   text-align: center;
+  left: 0;
 }
 
 .hide-popup {
