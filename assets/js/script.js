@@ -328,7 +328,7 @@ async function initMap() {
         <div id="info-window-left">
           <p><strong>Attraction Name: </strong>${title}<br></p>
           <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
-          <p><strong>Get Directions: </strong><a href="/take-me-there.html?dest-name=${title}" alt="Get directions to ${title}">Click here to get directions</a><br></p>
+          <p><strong>Get Directions: </strong><a href="./take-me-there.html?dest-name=${title}" alt="Get directions to ${title}">Click here to get directions</a><br></p>
           <p><strong>Description: </strong>${blurb}<br></p>
         </div>
         <div id="info-window-right">
@@ -361,7 +361,7 @@ async function initMap() {
             <p><strong>${i + 1}</strong><br></p>
             <p><strong>Attraction Name: </strong>${title}<br></p>
             <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
-            <p><strong>Get Directions: </strong><a href="/take-me-there.html?dest-name=${title}" alt="Get directions to ${title}">Click here to get directions</a><br></p>
+            <p><strong>Get Directions: </strong><a href="./take-me-there.html?dest-name=${title}" alt="Get directions to ${title}">Click here to get directions</a><br></p>
             <p><strong>Description: </strong>${blurb}<br></p>
           </div>
           <div id="list-content-image">
