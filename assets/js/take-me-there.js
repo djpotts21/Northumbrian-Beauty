@@ -85,7 +85,7 @@ function formsubmit() {
     event.preventDefault();
     let from = document.getElementById('from').value;
     let destinationName = getDestinationNameFromQueryString();
-    let newUrl = `take-me-there.html?dest-name=${destinationName}&from=${from}`;
+    let newUrl = `./take-me-there.html?dest-name=${destinationName}&from=${from}`;
     window.location.href = newUrl;
   });
 }
