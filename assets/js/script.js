@@ -328,7 +328,7 @@ async function initMap() {
         <div id="info-window-left">
           <p><strong>Attraction Name: </strong>${title}<br></p>
           <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
-          <p><strong>Get Directions: </strong><a href="/take-me-there.html?dest-name=${title}" alt="Get directions to ${title}" target="_blank">Click here to get directions</a><br></p>
+          <p><strong>Get Directions: </strong><a href="/take-me-there.html?dest-name=${title}" alt="Get directions to ${title}">Click here to get directions</a><br></p>
           <p><strong>Description: </strong>${blurb}<br></p>
         </div>
         <div id="info-window-right">
@@ -338,13 +338,14 @@ async function initMap() {
       }
       infoWindow.open(marker.map, marker);
     });
-
+    if (window.location.href.includes('places-to-stay')) {
     document.getElementById("sidebar-right").innerHTML += `
         <div id="list-item">
           <div id="list-content-text">
             <p><strong>${i + 1}</strong><br></p>
             <p><strong>Attraction Name: </strong>${title}<br></p>
             <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
+            <p><strong>Get Directions: </strong>Sorry, we can't give you directions as we do not know the exact location. <a href="${website}" alt="Link to ${title}'s website"> Book on AirBNB to get more info </a><br></p>
             <p><strong>Description: </strong>${blurb}<br></p>
           </div>
           <div id="list-content-image">
@@ -352,6 +353,22 @@ async function initMap() {
           </div>
         </div>
     `;
+    }
+    else {
+      document.getElementById("sidebar-right").innerHTML += `
+        <div id="list-item">
+          <div id="list-content-text">
+            <p><strong>${i + 1}</strong><br></p>
+            <p><strong>Attraction Name: </strong>${title}<br></p>
+            <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
+            <p><strong>Get Directions: </strong><a href="/take-me-there.html?dest-name=${title}" alt="Get directions to ${title}">Click here to get directions</a><br></p>
+            <p><strong>Description: </strong>${blurb}<br></p>
+          </div>
+          <div id="list-content-image">
+            <img src="${image}" alt="Photo of ${title}">
+          </div>
+        </div>
+    `}
   });
 
 }

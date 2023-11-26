@@ -39,95 +39,100 @@
 // Get values from url
 
 function getDestinationNameFromQueryString() {
-    let queryDestString = window.location.search;
-    let urlDestParams = new URLSearchParams(queryDestString);
-    let destinationName = urlDestParams.get('dest-name');
-    return destinationName;
-  }
-  
-  function getFromFromQueryString() {
-    let queryFromString = window.location.search;
-    let urlFromParams = new URLSearchParams(queryFromString);
-    let from = urlFromParams.get('from');
-    return from;
-  }
+  let queryDestString = window.location.search;
+  let urlDestParams = new URLSearchParams(queryDestString);
+  let destinationName = urlDestParams.get('dest-name');
+  return destinationName;
+}
 
-  // Set values in html
-  let destinationNameValue = getDestinationNameFromQueryString();
-  document.querySelector('.route-to').textContent = destinationNameValue;
+function getFromFromQueryString() {
+  let queryFromString = window.location.search;
+  let urlFromParams = new URLSearchParams(queryFromString);
+  let from = urlFromParams.get('from');
+  return from;
+}
 
+// Set values in html
+let destinationNameValue = getDestinationNameFromQueryString();
+document.querySelector('.route-to').textContent = destinationNameValue;
+
+// Populate the hidden form field with the destination name
+// Get the query parameter value from the URL
+const urlParams = new URLSearchParams(window.location.search);
+const destNameValue = urlParams.get('dest-name');
+
+// Set the query parameter value as the value of the hidden input field
+document.getElementById('dest-name').value = destNameValue;
 
 // Popup form for setting the 'from' parameter
 
-  window.addEventListener('load', () => {
-    let getFromQueryString2 = window.location.search;
-    const urlFromParams2 = new URLSearchParams(getFromQueryString2);
-    let from = urlFromParams2.get('from');
+window.addEventListener('load', () => {
+  let getFromQueryString2 = window.location.search;
+  const urlFromParams2 = new URLSearchParams(getFromQueryString2);
+  let from = urlFromParams2.get('from');
 
-    if (!from) {
-      // Display the popup with the form
-      document.getElementById('popup').classList.remove("hide-popup");
-      document.getElementById('popup').classList.add("show-popup");
-
-      // Handle form submission
-      const form = document.querySelector('.popup form');
-      form.addEventListener('submit', (event) => {
-        event.preventDefault();
-        let from = document.getElementById('from').value;
-        let destinationName = getDestinationNameFromQueryString();
-        let newUrl = `/2.html?dest-name=${destinationName}&from=${from}`;
-        window.location.href = newUrl;
-      });
-    }
-  });
-
-
-
-
-
-  // Call the function to render the map with directions
-  async function renderMapWithDirections() {
-    // Create a map object
-      const { Map } = await google.maps.importLibrary("maps");
-    const map = new google.maps.Map(document.getElementById("map"), {
-      center: { lat: 55.299360566294155, lng: -2.0132524486701318 }, // Set the initial map center
-      zoom: 9, // Set the initial zoom level
-    });
-
-    // Create a directions service object
-    const directionsService = new google.maps.DirectionsService();
-
-    // Create a directions renderer object
-    const directionsRenderer = new google.maps.DirectionsRenderer({
-      map: map, // Render the directions on the map
-    });
-
-    // Define the origin and destination for the directions
-    const fromValue = getFromFromQueryString();
-    const destinationName = getDestinationNameFromQueryString();
-    const origin = fromValue;
-    const destination = destinationName;
-
-    // Create a directions request object
-    const request = {
-      origin: origin,
-      destination: destination,
-      travelMode: google.maps.TravelMode.DRIVING, // Set the travel mode to driving
-    };
-
-    // Send the directions request to the directions service
-    directionsService.route(request, function (result, status) {
-      if (status === google.maps.DirectionsStatus.OK) {
-        // Display the directions on the map
-        directionsRenderer.setDirections(result);
-      } else {
-        console.error("Error retrieving directions:", status);
-      }
-    });
+  if (!from) {
+    // Display the popup with the form
+    document.getElementById('popup').classList.remove("hide-popup");
+    document.getElementById('popup').classList.add("show-popup");
   }
 
-  // Call the function to render the map with directions
+});
+// Handle form submission
+function formsubmit() {
+  const form = document.querySelector('fromform');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let from = document.getElementById('from').value;
+    let destinationName = getDestinationNameFromQueryString();
+    let newUrl = `./take-me-there.html?dest-name=${destinationName}&from=${from}`;
+    window.location.href = newUrl;
+  });
+}
 
-  renderMapWithDirections();
-  
+// Call the function to render the map with directions
+async function renderMapWithDirections() {
+  // Create a map object
+  const { Map } = await google.maps.importLibrary("maps");
+  const map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: 55.299360566294155, lng: -2.0132524486701318 }, // Set the initial map center
+    zoom: 9, // Set the initial zoom level
+  });
+
+  // Create a directions service object
+  const directionsService = new google.maps.DirectionsService();
+
+  // Create a directions renderer object
+  const directionsRenderer = new google.maps.DirectionsRenderer({
+    map: map, // Render the directions on the map
+  });
+
+  // Define the origin and destination for the directions
+  const fromValue = getFromFromQueryString();
+  const destinationName = getDestinationNameFromQueryString();
+  const origin = fromValue;
+  const destination = destinationName;
+
+  // Create a directions request object
+  const request = {
+    origin: origin,
+    destination: destination,
+    travelMode: google.maps.TravelMode.DRIVING, // Set the travel mode to driving
+  };
+
+  // Send the directions request to the directions service
+  directionsService.route(request, function (result, status) {
+    if (status === google.maps.DirectionsStatus.OK) {
+      // Display the directions on the map
+      directionsRenderer.setDirections(result);
+    } else {
+      console.error("Error retrieving directions:", status);
+    }
+  });
+}
+
+// Call the function to render the map with directions
+
+renderMapWithDirections();
+
 
