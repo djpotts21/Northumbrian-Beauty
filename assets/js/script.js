@@ -204,7 +204,7 @@ function toggleSidebarRight() {
     document.getElementById("map").style.width = '100%';
     document.getElementById("show-as-list-toggle").innerText = "Show as a List";
     document.getElementById("show-as-list-toggle").classList.remove("hide-list");
-    document.getElementById("show-as-list-toggle").classList.add("show-list");    
+    document.getElementById("show-as-list-toggle").classList.add("show-list");
     document.getElementById("sidebar-right").classList.add("hide-sidebar-right");
     document.getElementById("sidebar-right").classList.remove("show-sidebar-right");
   }
@@ -374,4 +374,4 @@ async function initMap() {
 }
 
 
-// module.exports = { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland, eatInNorthumberland }; 
+// module.exports = { lovelyPlacesNorthumberland, hiddenGemsNorthumberland, stayInNorthumberland, eatInNorthumberland };
