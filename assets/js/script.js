@@ -92,7 +92,7 @@ var hiddenGemsNorthumberland = [
   },
   {
     position: { lat: 55.160009476022815, lng: -1.6943338320159862 },
-    title: "Emily Wilding Davison Statue And Grave",
+    title: "Emily Wilding Davison Sculpture by Ray Lonsdale",
     website: "https://fabulousnorth.com/emily-wilding-davison-statue-and-grave/",
     blurb: `Emily Davison was a militant suffragette who died after throwing herself in front of the king's horse at the Epsom Derby.`,
     image: "https://cdn.fabulousnorth.com/fabulous-north/place/emily-wilding-davison-statue-and-grave.jpg?width=500&aspect_ratio=269:200&quality=85",
@@ -106,7 +106,7 @@ var hiddenGemsNorthumberland = [
   },
   {
     position: { lat: 55.607953, lng: -1.719191 },
-    title: "Grace Darling Monument",
+    title: "RNLI Grace Darling Museum",
     website: "https://fabulousnorth.com/grace-darling-monument/",
     blurb: `The monument for the Northumberland heroine Grace Darling who helped in the the rescue of survivors from the shipwrecked Forfarshire in 1838.`,
     image: "https://cdn.fabulousnorth.com/fabulous-north/place/grace-darling-grave.jpg?width=500&aspect_ratio=269:200&quality=85",
@@ -154,7 +154,7 @@ var stayInNorthumberland = [
 var eatInNorthumberland = [
   {
     position: { lat: 55.3368837433866, lng: -1.5769272794560412 },
-    title: "The Fish Shack",
+    title: "The Fish Shack, Amble,  Northumberland",
     website: "https://www.boathousefoodgroup.co.uk/fish-shack/",
     blurb: `From fish and chips, locally smoked seafood and freshly steamed mussels to an array of delicious seasonal specials, Fish Shack welcomes all.`,
     image: "https://www.boathousefoodgroup.co.uk/wp-content/uploads/2017/10/fish-shack-01-1400x860.jpg",
@@ -168,14 +168,14 @@ var eatInNorthumberland = [
   },
   {
     position: { lat: 54.97210816930676, lng: -2.1019023406211876 },
-    title: "Little Mexico",
+    title: "Little Mexico, Hexham, Northumberland",
     website: "https://littlemexico.loke.app/1056/menu",
     blurb: `Little Mexico is a gastro shop which incorporates a healthy juice bar giving you the true Mexican ex.`,
     image: "https://assets-tidy.s3-ap-southeast-2.amazonaws.com/org/01F5ANHYE69KDY7D7SXSASPN4J/theme/Web-Banner_01FBGSEPJ8S1RAKACQXC3VHMFB.png",
   },
   {
     position: { lat: 55.173105075603374, lng: -2.4376195629613857 },
-    title: "The Pheasant Inn",
+    title: "The Pheasant Inn, Falstone",
     website: "http://www.thepheasantinn.com/",
     blurb: `From the moment you step inside The Pheasant Inn you’ll be treated to the warmest of welcomes. Found in the heart of the Northumberland countryside near Kielder Water, we are a family run Country Inn with Bed and Breakfast, offering comfortable `,
     image: "https://www.thepheasantinn.com/assets/cache/images/header/pheasant_inn_northumberland_exterior_2-490x-96a.jpg",
@@ -197,12 +197,16 @@ function toggleSidebarRight() {
     document.getElementById("show-as-list-toggle").innerText = "Hide List";
     document.getElementById("show-as-list-toggle").classList.remove("show-list");
     document.getElementById("show-as-list-toggle").classList.add("hide-list");
+    document.getElementById("sidebar-right").classList.add("show-sidebar-right");
+    document.getElementById("sidebar-right").classList.remove("hide-sidebar-right");
   }
   else {
     document.getElementById("map").style.width = '100%';
     document.getElementById("show-as-list-toggle").innerText = "Show as a List";
     document.getElementById("show-as-list-toggle").classList.remove("hide-list");
-    document.getElementById("show-as-list-toggle").classList.add("show-list");
+    document.getElementById("show-as-list-toggle").classList.add("show-list");    
+    document.getElementById("sidebar-right").classList.add("hide-sidebar-right");
+    document.getElementById("sidebar-right").classList.remove("show-sidebar-right");
   }
 }
 
@@ -236,6 +240,7 @@ function eatInNorthumberlandFunc() {
   let map;
   initMap();
 }
+
 
 // JS for dom manipulation based on url value
 
@@ -305,16 +310,32 @@ async function initMap() {
       const { target } = domEvent;
 
       infoWindow.close();
-      infoWindow.setContent(`
+      if (window.location.href.includes('places-to-stay')) {
+        infoWindow.setContent(`
+          <div id="info-window-left">
+            <p><strong>Attraction Name: </strong>${title}<br></p>
+            <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
+            <p><strong>Get Directions: </strong>Sorry, we can't give you directions as we do not know the exact location. <a href="${website}" alt="Link to ${title}'s website"> Book on AirBNB to get more info </a><br></p>
+            <p><strong>Description: </strong>${blurb}<br></p>
+          </div>
+          <div id="info-window-right">
+          <img src="${image}" alt="Photo of ${title}">
+          </div>`
+        );
+      }
+      else {
+        infoWindow.setContent(`
         <div id="info-window-left">
           <p><strong>Attraction Name: </strong>${title}<br></p>
           <p><strong>Website: </strong><a href="${website}" alt="Link to ${title}'s website" target="_blank">Click here to view website</a><br></p>
+          <p><strong>Get Directions: </strong><a href="/take-me-there.html?dest-name=${title}" alt="Get directions to ${title}" target="_blank">Click here to get directions</a><br></p>
           <p><strong>Description: </strong>${blurb}<br></p>
         </div>
         <div id="info-window-right">
-         <img src="${image}" alt="Photo of ${title}">
+        <img src="${image}" alt="Photo of ${title}">
         </div>`
-      );
+        );
+      }
       infoWindow.open(marker.map, marker);
     });
 

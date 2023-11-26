@@ -26,6 +26,13 @@ body{
   filter: blur(0px);
   transition: 0.5s ease-in-out;
 }
+/* Sidebar */
+.hide-sidebar-right {
+  display: none;
+}
+.show-sidebar-right{
+  display: block;
+}
 
 /* Navbar */
 .navbar{
@@ -169,6 +176,26 @@ footer{
   display:none ;
 }
 
+/* Popup for Route */
+div#popup {
+  z-index: 999;
+  position: absolute;
+  top: 50%;
+  background: white;
+  padding: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 30%;
+}
+
+.hide-popup
+{
+  display: none;
+}
+.show-popup{
+  display: block;
+}
+
 /* Buttons */
 #get-started {
   padding: 10px 20px 10px 20px;
@@ -194,6 +221,43 @@ h2 {
   font-weight: 800;
 }
 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
 
   /*Mobile / Tablet CSS*/
   @media only screen and (max-width: 809px) {

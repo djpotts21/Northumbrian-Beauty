@@ -39,26 +39,49 @@
 // Get values from url
 
 function getDestinationNameFromQueryString() {
-    let queryString = window.location.search;
-    let urlParams = new URLSearchParams(queryString);
-    const destinationName = urlParams.get('dest-name');
+    let queryDestString = window.location.search;
+    let urlDestParams = new URLSearchParams(queryDestString);
+    let destinationName = urlDestParams.get('dest-name');
     return destinationName;
   }
   
-  function getLatLongFromQueryString() {
-    let queryString = window.location.search;
-    let urlParams = new URLSearchParams(queryString);
-    const latLong = urlParams.get('latlong');
-    return latLong;
+  function getFromFromQueryString() {
+    let queryFromString = window.location.search;
+    let urlFromParams = new URLSearchParams(queryFromString);
+    let from = urlFromParams.get('from');
+    return from;
   }
 
   // Set values in html
-  let destinationName = getDestinationNameFromQueryString();
-  document.querySelector('.route-to').textContent = destinationName;
+  let destinationNameValue = getDestinationNameFromQueryString();
+  document.querySelector('.route-to').textContent = destinationNameValue;
 
-  // Google Maps
 
-  
+// Popup form for setting the 'from' parameter
+
+  window.addEventListener('load', () => {
+    let getFromQueryString2 = window.location.search;
+    const urlFromParams2 = new URLSearchParams(getFromQueryString2);
+    let from = urlFromParams2.get('from');
+
+    if (!from) {
+      // Display the popup with the form
+      document.getElementById('popup').classList.remove("hide-popup");
+      document.getElementById('popup').classList.add("show-popup");
+
+      // Handle form submission
+      const form = document.querySelector('.popup form');
+      form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        let from = document.getElementById('from').value;
+        let destinationName = getDestinationNameFromQueryString();
+        let newUrl = `/2.html?dest-name=${destinationName}&from=${from}`;
+        window.location.href = newUrl;
+      });
+    }
+  });
+
+
 
 
 
@@ -80,7 +103,9 @@ function getDestinationNameFromQueryString() {
     });
 
     // Define the origin and destination for the directions
-    const origin = "Bedlington, UK";
+    const fromValue = getFromFromQueryString();
+    const destinationName = getDestinationNameFromQueryString();
+    const origin = fromValue;
     const destination = destinationName;
 
     // Create a directions request object
