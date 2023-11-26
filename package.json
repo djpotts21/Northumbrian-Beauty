@@ -1,7 +1,8 @@
 {
   "dependencies": {
     "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0"
+    "jest-environment-jsdom": "^29.7.0",
+    "jslint": "^0.12.1"
   },
   "name": "northumbrian-beauty",
   "description": "Our web application aims to provide an immersive experience for tourists and visitors to Northumberland by combining various features. Utilizing Google Map markers, the application showcases the breathtaking beauty spots scattered throughout the Northumberland region. Users can explore these spots by accessing detailed information. Additionally, Places to stay via AirBNB allows users to conveniently find and book hotels and accommodations in the surrounding area.",
