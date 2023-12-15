@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Northumbrian Beauty</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid g-0">
+      <a class="navbar-brand" id="nav-logo" href="./index.html">
+        <img src="./assets/images/northumberland.png"
+          alt="Northumberland County Flag in shape of the county of Northumberland"
+          class="d-inline-block align-text-top nav-logo">
+        Northumbrian Beauty
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" id="home" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="nice-places" href="./nice-places.html">Nice Places</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="hidden-gems" href="./hidden-gems.html">Hidden Gems</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="places-to-stay" href="./places-to-stay.html">Places to stay</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="places-to-eat" href="./places-to-eat.html">Places to eat</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col m12 s12">
+        <div class="content-container">
+          <div class="card login-card">
+            <h2 class="card-img-top"><i class="fas fa-user-circle "></i> Login</h2>
+
+            <form name="login-form" id="login-form">
+              <div class="form-group row">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" name="email" id="email" value="Email@a">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="password" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="email" class="form-control" name="password" id="password" placeholder="Password">
+                </div>
+              </div>
+              <button type="submit" onclick="validateLoginForm()" class="btn btn-primary fw-button">Sign in</button>
+          </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row">
+        <div class="col m12 s12">
+          Copyright © 2023 - Daniel Potts | GitHub: <a href="https://github.com/djpotts21"
+            target="_blank">@djpotts21</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    // Login Form Validation
+
+function validateLoginForm() {
+    var x = document.forms["login-form"]["email"].value;
+    var y = document.forms["login-form"]["password"].value;
+    if (x == "" || y == "") {
+      alert("Please fill in all fields");
+      return false;
+    }
+    }
+  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"
+    integrity="sha512-3dZ9wIrMMij8rOH7X3kLfXAzwtcHpuYpEgQg1OA4QAob1e81H8ntUQmQm3pBudqIoySO5j0tHN4ENzA6+n2r4w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>

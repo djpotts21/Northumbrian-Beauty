@@ -27,6 +27,23 @@ button {
   color: blue;
 }
 
+/* Login Page */
+
+.login-card {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 1%;
+  padding: 40px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  background-color: #fff;
+
+}
+
+.fw-button {
+  width: 100%;
+}
+
 /* Generic Misc */
 body {
   padding: 0;
