@@ -66,7 +66,7 @@ This view should consist of a map taking out 80% of the page, a Logo / Nav Bar a
 - [Hidden Gems (No Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_hidden-gems.html(iPad%20Air).png)
 - [Places to stay (No Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_places-to-stay.html(iPad%20Air).png)
 - [Places to eat (No Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_places-to-eat.html(iPad%20Air).png)
-- [Nice Places (With Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_nice-places.html(iPad%20Air).png)
+- [Nice Places (With Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_nice-places.html(iPad%20Air)%20(1).png)
 - [Hidden Gems (With Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_hidden-gems.html(iPad%20Air)%20(1).png)
 - [Places to stay (With Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_places-to-stay.html(iPad%20Air)%20(1).png)
 - [Places to eat (With Sidebar)](/assets/images/final-project/Tablet/djpotts21.github.io_Northumbrian-Beauty_places-to-eat.html(iPad%20Air)%20(1).png)
