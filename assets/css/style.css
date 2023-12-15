@@ -337,6 +337,27 @@ h3 {
 /*Mobile / Tablet CSS*/
 @media only screen and (max-width: 809px) {
 
+  /* Generic Misc */
+  .content-container {
+    padding: 0px;
+}
+
+  /* Login Page */
+  .card {
+    padding:0
+  }
+  
+  .login-card {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 1%;
+    padding: 20px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #fff;
+  
+  }
+
   /* Navbar */
   .navbar-brand {
     font-size: 1em;
