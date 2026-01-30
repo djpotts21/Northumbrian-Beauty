@@ -41,7 +41,7 @@ var lovelyPlacesNorthumberland = [
     position: { lat: 55.18559938889182, lng: -1.5042083978634628 },
     title: "Newbiggin Maritime Centre",
     website: "http://www.nmcentre.org.uk/",
-    blurb: `We are the gateway to Northumberland's coastline. Discover life in a historic fishing village. Discover the Mary Joicey all weather lifeboat and the Girl Anne fishing coble.`,
+    blurb: `We are the gateway to Northumberland's coastline. Discover life in a historic fishing village. Discover the Mary Joicey all-weather lifeboat and the Girl Anne fishing coble.`,
     image: "https://d2f0ora2gkri0g.cloudfront.net/bkpam2155390_img_0200.jpg",
   },
   {
@@ -55,7 +55,7 @@ var lovelyPlacesNorthumberland = [
     position: { lat: 55.29369, lng: -1.5840619 },
     title: "Duridge Bay & Country Park",
     website: "https://www.northumberland.gov.uk/Local/Country-parks-visitor-centres-coastal-sitesPubl/Druridge-Bay-Country-Park-visitor-centre.aspx",
-    blurb: `Infringed with rugged dunes, Druridge Bay has unspoilt coastline stretching as far as the eye can see.`,
+    blurb: `Infringed with rugged dunes, Druridge Bay has an unspoilt coastline stretching as far as the eye can see.`,
     image: "https://images.visitnorthumberland.com/Druridge-Links/vn-large-Aerial-shot-of-Druridge-Bay.jpg",
   },
   {
@@ -80,7 +80,7 @@ var hiddenGemsNorthumberland = [
     title: "Northumberlandia, the Lady of the North",
     website: "https://www.northumberlandia.com/",
     blurb: `
-      Northumberlandia, the Lady of the North. The country park, woodland trail and landscape sculpture is open from dawn ’til dusk each day. The café and toilets are open daily Monday – Sunday, from 10:00 – 16:00. Hot food stops at 15:00. We hope you enjoy your visit!`,
+      Northumberlandia, the Lady of the North. The country park, woodland trail and landscape sculpture are open from dawn to dusk each day. The café and toilets are open daily Monday – Sunday, from 10:00 – 16:00. Hot food stops at 15:00. We hope you enjoy your visit!`,
     image: "https://www.northumberlandia.com/wp-content/themes/northumberlandia/slider/nlandia_P9_front.jpg",
   },
   {
@@ -106,9 +106,9 @@ var hiddenGemsNorthumberland = [
   },
   {
     position: { lat: 55.607953, lng: -1.719191 },
-    title: "RNLI Grace Darling Museum",
+    title: "Grace Darling Museum",
     website: "https://fabulousnorth.com/grace-darling-monument/",
-    blurb: `The monument for the Northumberland heroine Grace Darling who helped in the the rescue of survivors from the shipwrecked Forfarshire in 1838.`,
+    blurb: `The monument for the Northumberland heroine Grace Darling who helped in the rescue of survivors from the shipwrecked Forfarshire in 1838.`,
     image: "https://cdn.fabulousnorth.com/fabulous-north/place/grace-darling-grave.jpg?width=500&aspect_ratio=269:200&quality=85",
   }
 ];
@@ -118,7 +118,7 @@ var stayInNorthumberland = [
     position: { lat: 55.17006933813593, lng: -1.6919234998891883 },
     title: "Beautiful Town Centre Cottage, Hot Tub - Morpeth",
     website: "https://www.airbnb.co.uk/rooms/592281834572836855?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Northumberland&pets=0&check_in=2023-09-11&check_out=2023-09-16&source_impression_id=p3_1691010996_y5UnC3%2BXsFf1%2BocV&previous_page_section_name=1001&federated_search_id=c4a8b1c7-045c-41b1-b900-5d7c9fb232b7",
-    blurb: `Copper cottage is located in the town center of Morpeth Northumberland, Recently been fully refurbished to a very high standard.`,
+    blurb: `Copper cottage is located in the town centre of Morpeth, Northumberland. Recently been fully refurbished to a very high standard.`,
     image: "https://a0.muscache.com/im/pictures/e1a488b2-0893-453f-aaff-eb007f6809c5.jpg?im_w=720",
   },
   {
@@ -132,21 +132,21 @@ var stayInNorthumberland = [
     position: { lat: 55.42200072421149, lng: -1.580626691765224 },
     title: "Beach Cottage",
     website: "https://www.airbnb.co.uk/rooms/25320195?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Northumberland&pets=0&check_in=2023-10-14&check_out=2023-10-21&source_impression_id=p3_1691011209_rAbP2vts9TwAZIdq&previous_page_section_name=1001&federated_search_id=5492ec2a-29c4-4838-84de-92c03c5bc7b6",
-    blurb: `Beachside, fisherman’s cottage with uninterrupted and endless sea views. Located in the old smugglers village of Boulmer. Perfect for active family holidays and just a stone throw from the popular ‘Fishing Boat Inn`,
+    blurb: `Beachside, fisherman’s cottage with uninterrupted and endless sea views. Located in the old smugglers' village of Boulmer. Perfect for active family holidays and just a stone's throw from the popular ‘Fishing Boat Inn`,
     image: "https://a0.muscache.com/im/pictures/7c3535bb-a942-40bf-8af8-f6d93494d0b6.jpg?im_w=720",
   },
   {
     position: { lat: 55.546013990904726, lng: -1.9383375723397736 },
-    title: "The Byre. Cosy, eco friendly barn camping.",
+    title: "The Byre. Cosy, eco-friendly barn camping.",
     website: "https://www.airbnb.co.uk/rooms/41727832?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Northumberland&pets=0&check_in=2023-10-21&check_out=2023-10-26&source_impression_id=p3_1691011215_hlw7IBPbVqQxW2Ca&previous_page_section_name=1001&federated_search_id=5492ec2a-29c4-4838-84de-92c03c5bc7b6",
-    blurb: `The Byre is a delightful upcycled 19th century listed cow byre on an old farm. The room looks out on to the  farm courtyard. There is a large garden for visitors use, and dark skies above us.`,
+    blurb: `The Byre is a delightful upcycled 19th-century listed cow byre on an old farm. The room looks out onto the  farm courtyard. There is a large garden for visitors' use, and dark skies above us.`,
     image: "https://a0.muscache.com/im/pictures/9989ecc9-a75c-45b7-96a7-0f64be10f8ef.jpg?im_w=1200",
   },
   {
     position: { lat: 55.51884841764941, lng: -1.6309355566245507 },
     title: "Deluxe Detached Cabin at Newton Hall",
     website: "https://www.airbnb.co.uk/rooms/767114813888508457?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Northumberland&pets=0&check_in=2023-08-20&check_out=2023-08-26&source_impression_id=p3_1691010990_v8mcubarlPTEbUYA&previous_page_section_name=1001&federated_search_id=ddd59f77-7eb1-4cf7-b9d7-d6fad220e1d9",
-    blurb: `Set in the secluded Northumberland Coast, a short stroll from the sandy beaches are Newton Halls Garden Rooms. Boasting a private terrace with an open fire chimenea & Hot Tub where you can relax under the clear night sky's.`,
+    blurb: `Set in the secluded Northumberland Coast, a short stroll from the sandy beaches are Newton Halls Garden Rooms. Boasting a private terrace with an open fire chimenea & Hot Tub where you can relax under the clear night sky.`,
     image: "https://a0.muscache.com/im/pictures/miso/Hosting-767114813888508457/original/85752517-6c88-4f28-b572-c676236f39f0.jpeg?im_w=1200",
   }
 ];
@@ -177,14 +177,14 @@ var eatInNorthumberland = [
     position: { lat: 55.173105075603374, lng: -2.4376195629613857 },
     title: "The Pheasant Inn, Falstone",
     website: "http://www.thepheasantinn.com/",
-    blurb: `From the moment you step inside The Pheasant Inn you’ll be treated to the warmest of welcomes. Found in the heart of the Northumberland countryside near Kielder Water, we are a family run Country Inn with Bed and Breakfast, offering comfortable `,
+    blurb: `From the moment you step inside The Pheasant Inn, you’ll be treated to the warmest of welcomes. Found in the heart of the Northumberland countryside near Kielder Water, we are a family-run Country Inn with Bed and Breakfast, offering comfortable `,
     image: "https://www.thepheasantinn.com/assets/cache/images/header/pheasant_inn_northumberland_exterior_2-490x-96a.jpg",
   },
   {
     position: { lat: 55.54535561989752, lng: -2.0110548760314595 },
     title: "Ad Gefrin",
     website: "https://adgefrin.co.uk/our-experience/our-bar-bistro#",
-    blurb: `Celebrating the very best produce is at the heart of all we do. Our Bistro showcases local ingredients from our doorstep as well as sourcing the best the wider Northumbria and the borderlands has to offer. `,
+    blurb: `Celebrating the very best produce is at the heart of all we do. Our Bistro showcases local ingredients from our doorstep as well as sourcing the best the wider Northumbria and the borderlands have to offer. `,
     image: "https://adgefrin.co.uk/image/crop/1679921745_3e46d06328ee3c4ac6b3.jpg/1800/1000",
   }
 ];
