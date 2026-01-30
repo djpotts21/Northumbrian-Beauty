@@ -30,7 +30,7 @@
     };
   d[l] ? console.warn(p + " only loads once. Ignoring:", g) : d[l] = (f, ...n) => r.add(f) && u().then(() => d[l](f, ...n));
 })({
-  key: "AIzaSyD5glleTHLXTgAg5KpvydyZTSjdX4OpsDY",
+  key: "AIzaSyDo4vBlf0eZ9FJLc-XMqIiwwdWBwjrw6CE",
   v: "weekly",
   // Use the 'v' parameter to indicate the version to use (weekly, beta, alpha, etc.).
   // Add other bootstrap parameters as needed, using camel case.
