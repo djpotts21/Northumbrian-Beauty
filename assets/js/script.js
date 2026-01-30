@@ -63,7 +63,7 @@ var lovelyPlacesNorthumberland = [
     title: "Warkworth Castle",
     website: "https://www.english-heritage.org.uk/visit/places/warkworth-castle-and-hermitage/?utm_source=Google%20Business&utm_campaign=Local%20Listings&utm_medium=Google%20Business%20Profiles&utm_content=warkworth%20castle",
     blurb: `Striking new sculptures have been installed in the castle grounds to create a series of interactive trails which reveal the lives of people who lived in or near the castle in the early 15th century.`,
-    image: "https://www.visitnorthumberland.com/VisitNorthumberland/media/VisitNorthumberland/Home/Explore/Destinations/Market%20Towns/Warkworth/warkworth-2023.jpg?ext=.jpg",
+    image: "https://upload.wikimedia.org/wikipedia/commons/e/e2/Warkworth_Castle_interior%2C_2007.jpg",
   },
   {
     position: { lat: 55.41569608405353, lng: -1.7059520734667566 },
@@ -119,7 +119,7 @@ var stayInNorthumberland = [
     title: "Beautiful Town Centre Cottage, Hot Tub - Morpeth",
     website: "https://www.airbnb.co.uk/rooms/592281834572836855?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Northumberland&pets=0&check_in=2023-09-11&check_out=2023-09-16&source_impression_id=p3_1691010996_y5UnC3%2BXsFf1%2BocV&previous_page_section_name=1001&federated_search_id=c4a8b1c7-045c-41b1-b900-5d7c9fb232b7",
     blurb: `Copper cottage is located in the town centre of Morpeth, Northumberland. Recently been fully refurbished to a very high standard.`,
-    image: "https://a0.muscache.com/im/pictures/e1a488b2-0893-453f-aaff-eb007f6809c5.jpg?im_w=720",
+    image: "https://a0.muscache.com/im/pictures/b83aa3a7-ed47-4a1f-9966-9f53212e80b9.jpg?im_w=720",
   },
   {
     position: { lat: 55.31185729535512, lng: -1.9422650929127392 },
@@ -133,7 +133,7 @@ var stayInNorthumberland = [
     title: "Beach Cottage",
     website: "https://www.airbnb.co.uk/rooms/25320195?adults=1&children=0&enable_m3_private_room=true&infants=0&location=Northumberland&pets=0&check_in=2023-10-14&check_out=2023-10-21&source_impression_id=p3_1691011209_rAbP2vts9TwAZIdq&previous_page_section_name=1001&federated_search_id=5492ec2a-29c4-4838-84de-92c03c5bc7b6",
     blurb: `Beachside, fisherman’s cottage with uninterrupted and endless sea views. Located in the old smugglers' village of Boulmer. Perfect for active family holidays and just a stone's throw from the popular ‘Fishing Boat Inn`,
-    image: "https://a0.muscache.com/im/pictures/7c3535bb-a942-40bf-8af8-f6d93494d0b6.jpg?im_w=720",
+    image: "https://a0.muscache.com/im/pictures/hosting/Hosting-25320195/original/5d3560c9-dad7-42f0-ba84-88f4c997eebc.jpeg?im_w=720",
   },
   {
     position: { lat: 55.546013990904726, lng: -1.9383375723397736 },
@@ -178,7 +178,7 @@ var eatInNorthumberland = [
     title: "The Pheasant Inn, Falstone",
     website: "http://www.thepheasantinn.com/",
     blurb: `From the moment you step inside The Pheasant Inn, you’ll be treated to the warmest of welcomes. Found in the heart of the Northumberland countryside near Kielder Water, we are a family-run Country Inn with Bed and Breakfast, offering comfortable `,
-    image: "https://www.thepheasantinn.com/assets/cache/images/header/pheasant_inn_northumberland_exterior_2-490x-96a.jpg",
+    image: "https://www.thepheasantinn.com/wp-content/uploads/2025/06/pheasant_inn_kielder_news3.jpg",
   },
   {
     position: { lat: 55.54535561989752, lng: -2.0110548760314595 },
